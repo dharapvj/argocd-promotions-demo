@@ -1,0 +1,15 @@
+# Yellow App
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yellow
+spec:
+  template:
+    spec:
+      containers:
+      - name: yellow
+        env:
+        - name: MESSAGE
+          value: "This is a Stage App!!"
+        - name: BGCOLOR
+          value: "Moccasin"
