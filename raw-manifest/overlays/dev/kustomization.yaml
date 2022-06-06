@@ -3,6 +3,6 @@ commonLabels:
 commonAnnotations:
   note: “Welcome to dev!”
 bases:
-- ../../
+- ../../base/
 patchesStrategicMerge:
 - deploy_env.yaml
