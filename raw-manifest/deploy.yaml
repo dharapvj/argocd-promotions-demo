@@ -1,0 +1,26 @@
+# Yellow App
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yellow
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yellow-app
+  template:
+    metadata:
+      labels:
+        app: yellow-app
+    spec:
+      containers:
+      - name: yellow
+        image: dharapvj/bgcolor-text-demo:1.0
+        env:
+        - name: MESSAGE
+          value: "This is a Yellow App !!"
+        - name: BGCOLOR
+          value: "Khaki"
+        ports:
+          - name: http-port
+            containerPort: 3000
