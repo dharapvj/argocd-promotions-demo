@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: dev
+  name: stage
 
 # ---
 # apiVersion: argoproj.io/v1alpha1
@@ -26,11 +26,11 @@ metadata:
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: raw-k8s-dev
+  name: raw-k8s-stage
   namespace: argocd
 spec:
   destination:
-    namespace: dev
+    namespace: stage
     server: 'https://kubernetes.default.svc'
   source:
     path: raw-manifest/

@@ -4,3 +4,6 @@ deploy-argo:
 
 setup-dev-apps:
 	kubectl apply -f dev/
+
+setup-stage-apps:
+	kubectl apply -f stage/
