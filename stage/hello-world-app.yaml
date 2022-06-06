@@ -35,7 +35,7 @@ spec:
   source:
     path: raw-manifest/
     repoURL: 'https://github.com/dharapvj/argocd-promotions-demo'
-    targetRevision: HEAD
+    targetRevision: bgapp-stage
   project: default
   syncPolicy:
     automated: null

@@ -33,9 +33,9 @@ spec:
     namespace: dev
     server: 'https://kubernetes.default.svc'
   source:
-    path: raw-manifest/
+    path: raw-manifest/overlays/dev
     repoURL: 'https://github.com/dharapvj/argocd-promotions-demo'
-    targetRevision: HEAD
+    targetRevision: bgapp-dev
   project: default
   syncPolicy:
     automated: null
