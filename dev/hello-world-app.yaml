@@ -15,7 +15,7 @@ spec:
   source:
     repoURL: https://dharapvj.github.io/argocd-promotions-demo/
     chart: argo-demo-app
-    targetRevision: 0.1.0
+    targetRevision: 0.1.*
     path:
     # helm:
     #   valueFiles:
