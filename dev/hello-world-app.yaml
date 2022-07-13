@@ -4,24 +4,27 @@ kind: Namespace
 metadata:
   name: dev
 
-# ---
-# apiVersion: argoproj.io/v1alpha1
-# kind: Application
-# metadata:
-#   name: argo-demo-helm
-#   namespace: argocd
-# spec:
-#   project: default
-#   source:
-#     repoURL: https://github.com/dharapvj/flux-trial
-#     targetRevision: HEAD
-#     path: helm-chart
-#     helm:
-#       valueFiles:
-#         - values.yaml
-#   destination:
-#     server: https://kubernetes.default.svc
-#     namespace: dev
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-demo-helm
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://dharapvj.github.io/argocd-promotions-demo/
+    chart: argo-demo-app
+    targetRevision: 0.1.0
+    path:
+    # helm:
+    #   valueFiles:
+    #     - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+  syncPolicy:
+    automated: null
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
