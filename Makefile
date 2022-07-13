@@ -17,4 +17,4 @@ helm-publish:
 	# NOTE- switch to gh-pages branch can fail if you have modified files
 	git checkout gh-pages
 	mv argo-demo-app-*.tgz charts/
-	helm repo index --url https://dharapvj.github.io/argocd-promotions-demo/charts/ .
+	helm repo index --url https://dharapvj.github.io/argocd-promotions-demo/ .
