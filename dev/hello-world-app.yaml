@@ -8,7 +8,7 @@ metadata:
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-demo-helm
+  name: helm-demo-dev
   namespace: argocd
 spec:
   project: default
@@ -23,8 +23,8 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
-  syncPolicy:
-    automated: null
+  # syncPolicy:
+  #   automated: null
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
@@ -40,5 +40,5 @@ spec:
     repoURL: 'https://github.com/dharapvj/argocd-promotions-demo'
     targetRevision: bgapp-dev
   project: default
-  syncPolicy:
-    automated: null
+  # syncPolicy:
+  #   automated: null

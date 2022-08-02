@@ -10,6 +10,10 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "1.0"
 
+# Added in chart v0.1.2
+appBackgroundColor: darkseagreen
+appMessage: Default message set in values.yaml
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""

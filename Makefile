@@ -1,5 +1,5 @@
 deploy-argo:
-	helm upgrade --install argocd --version 3.33.6 --namespace argocd --create-namespace argo/argo-cd 
+	helm upgrade --install argocd --version 3.33.6 --namespace argocd --create-namespace argo/argo-cd -f values-argocd.yaml
 # -f values-argo.yaml --debug
 
 setup-dev-apps:

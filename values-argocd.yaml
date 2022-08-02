@@ -1,3 +1,7 @@
 controller:
   args:
     appResyncPeriod: "10" # Demo purpose only.. brings quick refresh from server
+repoServer:
+  extraArgs:
+  - "--repo-cache-expiration"
+  - "1h"
