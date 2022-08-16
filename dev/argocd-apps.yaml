@@ -2,40 +2,43 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: stage
+  name: dev
 
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: helm-demo-stage
+  name: helm-demo-dev
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://dharapvj.github.io/argocd-promotions-demo/
     chart: argo-demo-app
-    # A FIXMED VERSION - IDEALLY FOR PRODUCTION
-    targetRevision: 0.1.0
+    targetRevision: 0.1.*
     path:
     # helm:
     #   valueFiles:
     #     - values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: stage
+    namespace: dev
+  # syncPolicy:
+  #   automated: null
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: raw-k8s-stage
+  name: raw-k8s-dev
   namespace: argocd
 spec:
   destination:
-    namespace: stage
+    namespace: dev
     server: 'https://kubernetes.default.svc'
   source:
-    path: raw-manifest/overlays/stage
+    path: raw-manifest/overlays/dev
     repoURL: 'https://github.com/dharapvj/argocd-promotions-demo'
-    targetRevision: bgapp-stage
+    targetRevision: main   # This is a branch reference
   project: default
+  # syncPolicy:
+  #   automated: null

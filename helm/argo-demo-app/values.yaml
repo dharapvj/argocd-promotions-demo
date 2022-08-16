@@ -11,7 +11,8 @@ image:
   tag: "1.0"
 
 # Added in chart v0.1.2
-appBackgroundColor: darkseagreen
+appBackgroundColor: cornflowerblue
+# options to pick - darkseagreen, cornflowerblue, deeppink, ivory, lemonchiffon, palegreen, navajowhite
 appMessage: Default message set in values.yaml
 
 imagePullSecrets: []
