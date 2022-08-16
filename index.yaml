@@ -3,7 +3,17 @@ entries:
   argo-demo-app:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2022-08-02T11:10:24.2613432+05:30"
+    created: "2022-08-16T17:39:18.4472882+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 9bd52e7039d8e02cdad616542dfa2f031f390fc22e0ec4867d3289655995780e
+    name: argo-demo-app
+    type: application
+    urls:
+    - https://dharapvj.github.io/argocd-promotions-demo/charts/argo-demo-app-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-08-16T17:39:18.4470279+05:30"
     description: A Helm chart for Kubernetes
     digest: 1adb5fb4f820d6ce8dec38d86b46434031e71a7519d0d30881dc2ee549e3ff1b
     name: argo-demo-app
@@ -13,7 +23,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2022-08-02T11:10:24.2609873+05:30"
+    created: "2022-08-16T17:39:18.4467257+05:30"
     description: A Helm chart for Kubernetes
     digest: 7fee253be0b832448fb925b6e2d7737a06d9106335adba043ed857ac1c7e364c
     name: argo-demo-app
@@ -23,7 +33,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2022-08-02T11:10:24.2607376+05:30"
+    created: "2022-08-16T17:39:18.4464717+05:30"
     description: A Helm chart for Kubernetes
     digest: 59899ad3890e0be9e40421d4fbf4bd59c0f8d0b01d9b24920070951d5e0acd8e
     name: argo-demo-app
@@ -31,4 +41,4 @@ entries:
     urls:
     - https://dharapvj.github.io/argocd-promotions-demo/charts/argo-demo-app-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-02T11:10:24.2602856+05:30"
+generated: "2022-08-16T17:39:18.4461035+05:30"
