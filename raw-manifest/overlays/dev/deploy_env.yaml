@@ -10,6 +10,6 @@ spec:
       - name: yellow
         env:
         - name: MESSAGE
-          value: "This is a DEV App !!"
+          value: "This is a DEV App. Changes during CDS!!"
         - name: BGCOLOR
           value: "LimeGreen"
