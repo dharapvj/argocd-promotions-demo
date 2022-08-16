@@ -7,4 +7,8 @@
 ```
 git --no-pager log --oneline
 git tag -f bgapp-stage
+
+
+# For helm demo
+# remember to update chart version
 ```
