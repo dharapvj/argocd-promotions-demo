@@ -5,3 +5,16 @@ repoServer:
   extraArgs:
   - "--repo-cache-expiration"
   - "1h"
+server:
+  ingress:
+    enabled: true
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      #nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+      nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+configs:
+  secret:
+    # hashed version of value "admin" # NOT RECOMMENDED FOR PRODUCTION USAGE!!
+    # ❯ export ARGO_PWD=admin
+    # ❯ htpasswd -nbBC 10 "" $ARGO_PWD | tr -d ':\n' | sed 's/$2y/$2a/'
+    argocdServerAdminPassword: $2a$10$iAFPQtoJPmZuvvbpPX/CsudTSjSZitKsDMOnihJ45FeT3jFsc2Yjm

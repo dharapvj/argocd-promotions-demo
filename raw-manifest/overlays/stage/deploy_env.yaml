@@ -13,3 +13,19 @@ spec:
           value: "This is a Stage App!!"
         - name: BGCOLOR
           value: "Moccasin"
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: yellow-ing
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /yellow-stage(/.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: yellow-svc
+                port:
+                  number: 3000

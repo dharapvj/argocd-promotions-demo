@@ -23,8 +23,8 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
-  # syncPolicy:
-  #   automated: null
+  syncPolicy:
+    automated: {}
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
@@ -40,5 +40,5 @@ spec:
     repoURL: 'https://github.com/dharapvj/argocd-promotions-demo'
     targetRevision: main   # This is a branch reference
   project: default
-  # syncPolicy:
-  #   automated: null
+  syncPolicy:
+    automated: {}

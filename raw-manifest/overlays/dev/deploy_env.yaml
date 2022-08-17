@@ -10,6 +10,22 @@ spec:
       - name: yellow
         env:
         - name: MESSAGE
-          value: "This is a DEV App. Changes during CDS!!"
+          value: "This is a DEV App!!"
         - name: BGCOLOR
           value: "LimeGreen"
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: yellow-ing
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /yellow-dev(/.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: yellow-svc
+                port:
+                  number: 3000
