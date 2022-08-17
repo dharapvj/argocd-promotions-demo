@@ -16,10 +16,10 @@ spec:
     repoURL: https://dharapvj.github.io/argocd-promotions-demo/
     chart: argo-demo-app
     targetRevision: 0.1.*
-    path:
     helm:
-      valueFiles:
-        - values.yaml
+      parameters:
+        - name: ingressSuffix
+          value: dev
   destination:
     server: https://kubernetes.default.svc
     namespace: dev

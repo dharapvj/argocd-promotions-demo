@@ -17,10 +17,10 @@ spec:
     chart: argo-demo-app
     # A FIXED VERSION - IDEALLY FOR PRODUCTION
     targetRevision: 0.1.4
-    path:
     helm:
-      valueFiles:
-        - values.yaml
+      parameters:
+        - name: ingressSuffix
+          value: stage
   destination:
     server: https://kubernetes.default.svc
     namespace: stage
