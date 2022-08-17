@@ -14,6 +14,9 @@ image:
 appBackgroundColor: cornflowerblue
 # options to pick - darkseagreen, cornflowerblue, deeppink, ivory, lemonchiffon, palegreen, navajowhite
 appMessage: Default message set in values.yaml
+# Addded in chart v0.1.4
+# ingressSuffix: ""
+
 
 imagePullSecrets: []
 nameOverride: ""

@@ -17,9 +17,9 @@ spec:
     chart: argo-demo-app
     targetRevision: 0.1.*
     path:
-    # helm:
-    #   valueFiles:
-    #     - values.yaml
+    helm:
+      valueFiles:
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
