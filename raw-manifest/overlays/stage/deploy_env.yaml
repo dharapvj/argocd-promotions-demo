@@ -17,12 +17,12 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: yellow-ing
+  name: yellow-ing-raw
 spec:
   rules:
     - http:
         paths:
-          - path: /yellow-stage(/.*)
+          - path: /yellow-stage-raw(/.*)
             pathType: Prefix
             backend:
               service:

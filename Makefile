@@ -7,10 +7,10 @@ deploy-argo:
 	helm upgrade --install argocd --version 3.33.6 --namespace argocd --create-namespace argo/argo-cd -f values-argocd.yaml
 
 setup-dev-apps:
-	kubectl apply -f dev/
+	kubectl apply -f dev/argocd-apps.yaml
 
 setup-stage-apps:
-	kubectl apply -f stage/
+	kubectl apply -f stage/argocd-apps.yaml
 
 deploy-ingress-controller:
 # Under Kind use this
