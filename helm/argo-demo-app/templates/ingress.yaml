@@ -11,7 +11,7 @@ spec:
         paths:
           - backend:
               service:
-                name: yellow-svc
+                name: {{ include "argo-demo-app.fullname" . }}
                 port:
                   number: 3000
             path: /yellow-{{ .Values.ingressSuffix }}(/.*)
