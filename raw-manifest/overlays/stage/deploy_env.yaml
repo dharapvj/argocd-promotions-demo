@@ -10,9 +10,9 @@ spec:
       - name: yellow
         env:
         - name: MESSAGE
-          value: "This is a Stage App (raw yaml manifests)!!"
+          value: "This is a Stage App (raw yaml manifests)!! - CDS Demo"
         - name: BGCOLOR
-          value: "Moccasin"
+          value: "deeppink"
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress

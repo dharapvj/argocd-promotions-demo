@@ -10,9 +10,9 @@ spec:
       - name: yellow
         env:
         - name: MESSAGE
-          value: "This is a DEV App (raw yaml manifests)!!"
+          value: "This is a DEV App (raw yaml manifests)!! - CDS Demo"
         - name: BGCOLOR
-          value: "LimeGreen"
+          value: "cornflowerblue"
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress

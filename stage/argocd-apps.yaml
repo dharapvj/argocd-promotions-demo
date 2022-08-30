@@ -21,6 +21,8 @@ spec:
       parameters:
         - name: ingressSuffix
           value: stage
+        - name: appMessage
+          value: "This is Stage App deployed via Helm!"
   destination:
     server: https://kubernetes.default.svc
     namespace: stage

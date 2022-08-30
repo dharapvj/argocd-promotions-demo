@@ -20,6 +20,8 @@ spec:
       parameters:
         - name: ingressSuffix
           value: dev
+        - name: appMessage
+          value: "This is Dev App deployed via Helm!"
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
