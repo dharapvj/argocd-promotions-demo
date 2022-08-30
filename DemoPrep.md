@@ -23,8 +23,12 @@ Color options
 - navajowhite
 - Moccasin
 
-Files to change for demo
+Files to change for demo - keep them open
 raw-manifest/overlays/dev/deploy_env.yaml
+raw-manifest/overlays/stage/deploy_env.yaml
+
+helm/argo-demo-app/values.yaml
+helm-publish
 
 ```
 # to see the tag details

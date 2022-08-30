@@ -10,7 +10,7 @@ spec:
       - name: yellow
         env:
         - name: MESSAGE
-          value: "This is a DEV App (raw yaml manifests)!! - CDS Demo"
+          value: "This is a DEV App (raw yaml manifests)!!"
         - name: BGCOLOR
           value: "cornflowerblue"
 ---
