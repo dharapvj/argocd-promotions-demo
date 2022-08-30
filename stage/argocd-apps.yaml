@@ -16,7 +16,7 @@ spec:
     repoURL: https://dharapvj.github.io/argocd-promotions-demo/
     chart: argo-demo-app
     # A FIXED VERSION - IDEALLY FOR PRODUCTION
-    targetRevision: 0.1.5
+    targetRevision: 0.1.*
     helm:
       parameters:
         - name: ingressSuffix
