@@ -35,6 +35,8 @@ spec:
             value: {{ .Values.appMessage | default "This is a default message from helm chart!" }}
           - name: BGCOLOR
             value: {{ .Values.appBackgroundColor | default "lemonchiffon" }}
+          - name: TITLE_PREFIX
+            value: {{ .Values.titlePrefix | default "" }}
           ports:
             - name: http
               containerPort: 3000

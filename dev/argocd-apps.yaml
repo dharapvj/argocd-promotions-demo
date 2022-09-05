@@ -22,6 +22,8 @@ spec:
           value: dev
         - name: appMessage
           value: "This is Dev App deployed via Helm!"
+        - name: titlePrefix
+          value: "helm - dev -"
   destination:
     server: https://kubernetes.default.svc
     namespace: dev

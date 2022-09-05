@@ -23,6 +23,8 @@ spec:
           value: stage
         - name: appMessage
           value: "This is Stage App deployed via Helm!"
+        - name: titlePrefix
+          value: "helm - stage -"
   destination:
     server: https://kubernetes.default.svc
     namespace: stage

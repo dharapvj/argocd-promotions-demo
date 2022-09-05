@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: yellow
-        image: dharapvj/bgcolor-text-demo:1.0
+        image: dharapvj/bgcolor-text-demo:1.2
         env:
         - name: MESSAGE
           value: "This is a Yellow App !!"

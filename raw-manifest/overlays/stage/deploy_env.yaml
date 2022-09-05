@@ -13,6 +13,8 @@ spec:
           value: "This is a Stage App (raw yaml manifests)!!"
         - name: BGCOLOR
           value: "ivory"
+        - name: TITLE_PREFIX
+          value: "raw - stage - "
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
