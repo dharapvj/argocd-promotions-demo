@@ -11,7 +11,7 @@ image:
   tag: "1.2"
 
 # Added in chart v0.1.2
-appBackgroundColor: cornflowerblue
+appBackgroundColor: deeppink
 # options to pick - darkseagreen, cornflowerblue, deeppink, ivory, lemonchiffon, palegreen, navajowhite
 appMessage: Default message set in values.yaml
 titlePrefix: "helm - "
