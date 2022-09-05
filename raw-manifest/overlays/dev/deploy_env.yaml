@@ -10,9 +10,9 @@ spec:
       - name: yellow
         env:
         - name: MESSAGE
-          value: "This is a DEV App (raw yaml manifests)!!"
+          value: "This is a DEV App (raw yaml manifests)!"
         - name: BGCOLOR
-          value: "Moccasin"
+          value: "palegreen"
         - name: TITLE_PREFIX
           value: "raw - dev - "
 ---
