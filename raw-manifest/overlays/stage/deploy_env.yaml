@@ -10,9 +10,9 @@ spec:
       - name: yellow
         env:
         - name: MESSAGE
-          value: "This is a Stage App (raw yaml manifests)!"
+          value: "This is a Stage App (raw yaml manifests)! - CDS Demo 2"
         - name: BGCOLOR
-          value: "darkseagreen"
+          value: "ivory"
         - name: TITLE_PREFIX
           value: "raw - stage - "
 ---
